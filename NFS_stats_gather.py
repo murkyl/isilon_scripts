@@ -60,10 +60,10 @@ cmdlines = {
     "isi statistics system --nodes=all --degraded --format=table --output time,node,cpu,smb,ftp,http,nfs,hdfs,total,netin,netout,diskin,diskout --interval=%d",
 
     "protocol_by_op":
-    "isi statistics protocol --protocols=nfs --zero --long --output=TimeStamp,NumOps,In,InAvg,Out,OutAvg,TimeMin,TimeMax,TimeAvg,Op --totalby=Op --degraded --interval=%d",
+    "isi statistics protocol --protocols=nfs3 --zero --long --output=TimeStamp,NumOps,In,InAvg,Out,OutAvg,TimeMin,TimeMax,TimeAvg,Op --totalby=Op --degraded --interval=%d",
 
     "protocol_by_node":
-    "isi statistics protocol --protocols=nfs --zero --long --output=TimeStamp,In,Out,Op --totalby=node --degraded --interval=%d",
+    "isi statistics protocol --protocols=nfs3 --zero --long --output=TimeStamp,In,Out,Op --totalby=node --degraded --interval=%d",
 
     "drives":
     "isi statistics drive --nodes=all --degraded --sort=timeinq --limit=30 --output time,drive,type,opsin,bytesin,opsout,bytesout,timeavg,timeinq,queued,busy --interval=%d",
